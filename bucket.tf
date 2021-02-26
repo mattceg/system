@@ -1,5 +1,5 @@
 resource "google_storage_bucket" "matt_bucket"{
- name="matt-03-bucket01"
- location="us-central1"
+ name=var.bucket
+ location=var.region
  force_destroy=true
 }
